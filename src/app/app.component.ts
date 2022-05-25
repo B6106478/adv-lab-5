@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lab2-angular-app';
+  parentColorProperty! : string;
+
+  title = 'lab5-angular-app';
+  receiveData($event: any){
+    this.parentColorProperty = $event;
+
+  }
 }
+
